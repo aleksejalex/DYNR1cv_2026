@@ -9,7 +9,7 @@ Materials for practical exercises for lecture on **Dynamic Decision Making** ([s
 Lecturer: *doc. Ing. Tatiana V. Guy, Ph.D.* ([web](https://www.utia.cas.cz/people/guy)) \
 Tutors: *doc. Ing. Tatiana V. Guy, Ph.D.* & *Ing. Aleksej Gaj* ([web](https://aleksejgaj.cz/))
 
-
+**Note.** Some notebooks can run in Binder or Colab, but the best way is to run it locally (on your HW).
 
 
 
