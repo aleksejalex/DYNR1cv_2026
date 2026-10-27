@@ -1,0 +1,25 @@
+# Packages needed by the notebooks in this repo, for running them locally:
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+# (In Google Colab the notebooks install what is missing themselves.)
+# CPU-only PyTorch (pgmpy needs torch, the notebooks never use a GPU). Without this,
+# pip on Linux downloads ~3 GB of CUDA libraries. On Windows/macOS it changes nothing
+# (their default wheels are already CPU/MPS). Want GPU torch?
+# Reinstall it afterwards with the command from https://pytorch.org/get-started/locally/
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+statsmodels
+tabulate
+ipython
+gymnasium
+pygame-ce  # drop-in replacement for pygame (import pygame); has wheels for new Python versions
+imageio
+pgmpy==0.1.26
+bnlearn==0.10.2
+# lingam 1.13.0 (pulled in by bnlearn) caps scipy<=1.13.1, which has no wheels for Python 3.13+
+lingam<1.13
